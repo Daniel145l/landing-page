@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none
+}
+
+html, body {
+    height: 100%;
+}
+
+/*  */
+
+div.clear {
+    clear: both;
+}
+
+div.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*  */
+
+section.main-banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    background-image: url('Paisagem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; -> Comentei para evitar ficar travando */
+}
+
+header {
+    padding: 10px 0;
+}
+
+div.overlay {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.89));
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: -1;
+    position: absolute;
+}
+
+nav.menu {
+    margin: 0 auto;
+    width: 100%;
+    /* background-color: yellow; */
+    float: right;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+nav.menu ul {
+    display: inline-block;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+nav.menu li {
+    float: left;
+    margin: 0 40px;
+    list-style-type: none;
+}
+
+nav.menu li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transform: all .3s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+nav.menu li a.logo {
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+nav.menu li a:hover {
+    transition: all .3s;
+    color: #CECECE;
+}
+
+div.text-main-header {
+    color: #FFF;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+
+div.text-main-header h2 {
+    font-size: 45px;
+}
+
+div.text-main-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+div.circle-play {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+}
+
+i.fa-play {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/*  */
+
+a.end {
+    color: #5353b9;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+a.end:hover {text-decoration: underline;}
+
+main {
+    background-color: #0a0a0c;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    padding-bottom: 80px;
+}
+
+section.gallery {
+    text-align: center;
+    width: 100%;
+}
+
+div.text-main {
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+}
+
+div.text-main h3 {
+    font-size: 24px;
+}
+
+div.text-main p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 21px;
+}
+
+div.images-one {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+div.images-one img {
+    display: inline-block;
+    margin: 0 15px;
+    width: 28%;
+    max-height: 100%;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+div.images-one img:hover {
+    transform: scale(1.06);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/*  */
+
+section.g-two {margin-top: 100px;}
+
+div.images-two {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+div.images-two .banner-text {
+    display: inline-block;
+    width: 40%;
+    height: 400px;
+    cursor: pointer;
+}
+
+div.images-two .banner-text p {
+    font-size: 15px;
+    max-width: 95%;
+    display: inline-block;
+}
+
+div.images-two .banner-text h4 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+div.images-two img {
+    display: inline-block;
+    margin: 0 15px;
+    width: 94%;
+    max-height: 70%;
+}
+
+/*  */
+
+footer {
+    height: 400px;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 5px;
+    transition: all .3s;
+}
+
+footer a:hover {
+    color: #CCC;
+    transform: all .3s;
+}
